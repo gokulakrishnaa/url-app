@@ -12,17 +12,22 @@ export function Signup() {
       <div className="signup-credentials">
         <TextField
           id="standard-basic"
-          label="Enter username"
-          variant="standard"
-        />
-        <TextField
-          id="standard-basic"
-          label="Enter password"
-          variant="standard"
-        />
-        <TextField
-          id="standard-basic"
           label="Enter Email Id"
+          variant="standard"
+        />
+        <TextField
+          id="standard-basic"
+          label="Enter First Name"
+          variant="standard"
+        />
+        <TextField
+          id="standard-basic"
+          label="Enter Last Name"
+          variant="standard"
+        />
+        <TextField
+          id="standard-basic"
+          label="Enter Password"
           variant="standard"
         />
         <Button variant="contained">Register User</Button>
