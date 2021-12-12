@@ -6,6 +6,7 @@ import { useHistory } from "react-router-dom";
 
 export function ActivateUser() {
   const history = useHistory();
+  // eslint-disable-next-line
   const { token } = useParams();
   return (
     <div className="activate-container">
