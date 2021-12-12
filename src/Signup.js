@@ -26,7 +26,7 @@ export function Signup() {
       headers: {
         "Content-Type": "application/json",
       },
-    }).then(() => history.push("/"));
+    }).then(() => history.push("/authenticate"));
   };
 
   return (
