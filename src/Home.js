@@ -12,15 +12,20 @@ export function Home() {
       url,
     };
 
-    fetch("http://nodeurlapp.herokuapp.com/urlshort/shortner", {
+    fetch("https://nodeurlapp.herokuapp.com/urlshort/shortner", {
       method: "POST",
       body: JSON.stringify(newUrl),
       headers: {
         "Content-Type": "application/json",
       },
     })
-      .then((data) => data.json())
-      .then((details) => setShortUrl(details));
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        console.log(data.urlSh);
+        setShortUrl(data.urlSh);
+      });
   };
 
   return (
